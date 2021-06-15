@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Spring5JokesAppV2Application {
-    // Test initial commit
+    // Project init
     public static void main(String[] args) {
         SpringApplication.run(Spring5JokesAppV2Application.class, args);
     }
