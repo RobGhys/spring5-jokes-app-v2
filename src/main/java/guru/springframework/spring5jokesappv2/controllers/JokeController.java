@@ -21,12 +21,15 @@ public class JokeController {
         this.jokeService = jokeService;
     }
 
+    /**
+     * Passing the model
+     */
     @RequestMapping({"/", ""})
     public String showJoke(Model model){
         // model is a map implementation
         // Addin a property with the string "joke", and then the joke String so that we can reference it
         model.addAttribute("joke", jokeService.getJoke());
 
-        return "index"; // tells Spring MVC that we want to do the index view
+        return "index"; // tells Spring MVC that we want to do the index view from template folder in /resources
     }
 }
